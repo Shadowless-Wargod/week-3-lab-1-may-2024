@@ -1,95 +1,101 @@
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning CSS</title>
     <style>
-      h1 {
-        color: red;
-      }
+        /* Step 3: Color for every tag */
+        h1 { color: rgb(156, 165, 158); }
+        p { color: gray; }
+        em { color: purple; }
+        strong { color: darkred; }
+        a { color: blue; }
+        button { color: white; }
+        table { color: black; }
+        th { color: white; }
+        td { color: black; }
+        ul { color: teal; }
+        li { color: teal; }
 
-      p {
-        margin: 32px;
-      }
+        /* Step 4: Semantic tag styles */
+        header { background-color: lightblue; padding: 10px; text-align: center; border-bottom: 3px solid navy; }
+        main { background-color: aliceblue; padding: 20px; margin: 10px; }
+        footer { font-size: 14px; color: gray; text-align: center; padding: 10px; background-color: lightgrey; }
+        nav { background-color: lightgray; padding: 5px; text-align: center; }
 
-      button {
-      }
+        /* Classes and moved inline styles */
+        .underline { text-decoration: underline; }
+        .paragraph-1 { background-color: pink; margin: 15px; padding: 10px; font-size: 18px; }
+        .table-header { font-weight: bold; background-color: darkslategray; padding: 10px; }
+        .table-data { padding: 8px; text-align: center; }
+        .buy-button { background-color: blue; padding: 10px; border: none; cursor: pointer; margin-top: 15px; }
+        .cat-list { background-color: lightyellow; border: 2px dashed orange; padding: 10px; }
 
-      /* TODO: add styles for header  */
-      
-      /* TODO: add styles for footer  */
+        /* Step 6: Table styles */
+        table { border-collapse: collapse; margin: 20px auto; border: 1px solid black; background-color: whitesmoke; }
+        th, td { border: 1px solid black; }
 
-      .paragraph-1 {
-        background-color: pink;
-      }
+        /* Step 9: Creative box-shadow */
+        h1 { font-size: 40px; box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); }
+        button { box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); }
+
+        /* Extra tweaks */
+        a { margin: 5px; }
+        .intro-text { font-style: italic; } /* New class for second <p> */
     </style>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+</head>
+<body>
     <header>
-      <h1 style="text-decoration: underline">I like cats!
-      </h1>
+        <h1 class="underline">I Like Cats!</h1>
     </header>
+
     <main>
-      <p class="paragraph-1" style="">
-        <em>Nice kitty!</em> Consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Tincidunt nunc pulvinar
-        sapien et ligula ullamcorper malesuada. Euismod quis viverra nibh cras
-        pulvinar <strong>mattis</strong> nunc. Enim blandit volutpat maecenas volutpat blandit
-        aliquam etiam.    
-      </p>
-    
-      <p style="">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Tincidunt nunc pulvinar
-        sapien et ligula ullamcorper malesuada. Euismod quis viverra nibh cras
-        pulvinar mattis nunc. Enim blandit volutpat maecenas volutpat blandit
-        aliquam etiam. Sed blandit libero volutpat sed cras ornare arcu dui vivamus.
-        Nulla aliquet enim tortor at auctor urna nunc id cursus. Gravida arcu ac
-        tortor dignissim convallis aenean. Nulla porttitor massa id neque aliquam
-        vestibulum morbi blandit cursus. Fringilla urna porttitor rhoncus dolor. A
-        erat nam at lectus urna duis.
-      </p>
-    
-      <p style="">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Tincidunt nunc pulvinar
-        sapien et ligula ullamcorper malesuada. Euismod quis viverra nibh cras
-        pulvinar mattis nunc. Enim blandit volutpat maecenas volutpat blandit
-        aliquam etiam. Sed blandit libero volutpat sed cras ornare arcu dui vivamus.
-        Nulla aliquet enim tortor at auctor urna nunc id cursus. Gravida arcu ac
-        tortor dignissim convallis aenean. Nulla porttitor massa id neque aliquam
-        vestibulum morbi blandit cursus. Fringilla urna porttitor rhoncus dolor. A
-        erat nam at lectus urna duis.
-      </p>
-    
-      <table>
-        <tr>
-          <th style="">item</th>
-          <th style="">price</th>
-        </tr>
-        <tr>
-          <td style="">hotwheels car</td>
-          <td style="">$4.99</td>
-        </tr>
-        <tr>
-          <td style="">
-            Cabbage patch doll
-          </td>
-          <td style="">$1.99</td>
-        </tr>
-      </table>
-    
-      <button style="">Buy Now!</button>
+        <p class="paragraph-1">
+            <em>Nice kitty!</em> I love cats because they’re cute and cuddly. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+            tempor incididunt ut labore et dolore magna aliqua. 
+            <strong>Meow!</strong>
+        </p>
+
+        <p class="intro-text">Favorite Cat Breeds:</p>
+        <ul class="cat-list">
+            <li>Maine Coon - Big and fluffy!</li>
+            <li>Siamese - Chatty and sleek.</li>
+            <li>Persian - Fancy furballs.</li>
+            <li>Tabby - Cool stripey patterns.</li>
+        </ul>
+
+        <p class="intro-text">Cats are awesome! Here’s a little shop for cat stuff I like:</p>
+
+        <table>
+            <tr>
+                <th class="table-header">Item</th>
+                <th class="table-header">Price</th>
+            </tr>
+            <tr>
+                <td class="table-data">Cat Toy Mouse</td>
+                <td class="table-data">$1.99</td>
+            </tr>
+            <tr>
+                <td class="table-data">Catnip Ball</td>
+                <td class="table-data">$4.99</td>
+            </tr>
+        </table>
+
+        <button class="buy-button">Buy Now!</button>
     </main>
-  
+
     <nav>
-      <a> HOME </a> |
-      <a> ABOUT </a> |
-      <a> GALLERY </a>
+        <a href="#">HOME</a> | 
+        <a href="#">ABOUT</a> | 
+        <a href="#">GALLERY</a>
     </nav>
-    
+
     <footer>
+        <p>Made with love for cats!</p>
     </footer>
 
     <script src="./script.js"></script>
-  </body>
+</body>
 </html>
