@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel to Beautiful Places</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            padding: 20px;
+        }
+        .content-section {
+            background-color: #ecf0f1;
+            padding: 15px;
+            margin: 20px;
+            border: 2px solid #3498db;
+        }
+        .gallery-header {
+            color: #e74c3c;
+            padding: 15px;
+            text-align: center;
+        }
+        .destination-table {
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        .nav-link {
+            color: white;
+            text-decoration: none;
+        }
+        .nav-link {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+    <nav class="navbar">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#about" class="nav-link">About</a>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <main>
+            <h1>Travel to Beautiful Places</h1>
+            <div class="content-section">
+                <img src="https://images.pexels.com/photos/2356045/pexels-photo-2356045.jpeg" alt="A stunning mountain lake" class="image-large">
+                <img src="https://cdn0.weddingwire.com/vendor/822823/3_2/1280/jpg/aji-0178-high-res-3_51_328228-167407573725282.jpeg" alt="Wedding venue" title="Wedding venue" class="image-small">
+                <p>Traveling to beautiful places is my ultimate hobby! Whenever I have the money, I love exploring amazing spots like snowy mountains, sunny beaches, and hidden forests. There’s nothing better than seeing new views, breathing fresh air, and snapping pics of nature’s best. Or some of the rare occasions where humans build some of the most breathtaking architecture.</p>
+            </div>
+        </main>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <main>
+            <h1 class="gallery-header">Amazing Travel Spots</h1>
+            <div class="content-section content-section-gallery">
+                <img src="https://backiee.com/static/wallpapers/1000x563/170263.jpg" alt="Beautiful landscape wallpaper" class="gallery-image">
+                <img src="https://www.stadiumsofprofootball.com/wp-content/uploads/2016/08/mbs17950.jpg" alt="Atlanta Falcons Stadium" class="gallery-image-small">
+                <img src="https://myareanetwork-photos.s3.amazonaws.com/editorphotos/f/39700_1580921733.jpg" alt="Beautiful travel destination" class="gallery-image-large">
+            </div>
+        </main>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <main>
+            <h1>About My Travel Passion</h1>
+            <div class="content-section">
+                <h3>Top Travel Destinations</h3>
+                <table class="destination-table">
+                    <tr>
+                        <th>Location</th>
+                        <th>Highlight</th>
+                    </tr>
+                    <tr>
+                        <td>Hard Rock Cafe - Tulsa, Oklahoma</td>
+                        <td>Great music vibe</td>
+                    </tr>
+                    <tr>
+                        <td>Atlanta Falcons Stadium - Atlanta, Georgia</td>
+                        <td>Amazing architecture</td>
+                    </tr>
+                    <tr>
+                        <td>Cocoa Beach Pier - Cocoa Beach, Florida</td>
+                        <td>Perfect beach spot</td>
+                    </tr>
+                    <tr>
+                        <td>Bali, Indonesia</td>
+                        <td>Beaches and jungles</td>
+                    </tr>
+                    <tr>
+                        <td>Patagonia, Chile</td>
+                        <td>Epic hiking views</td>
+                    </tr>
+                </table>
+
+                <h3>Random Things I Love</h3>
+                <ul class="custom-list">
+                    <li>Eating weird snacks from new places</li>
+                    <li>Being at the highest places</li>
+                    <li>Camping under the stars</li>
+                    <li>Doing the impossible that doesn't involve risking my life</li>
+                    <li>Listening to chill travel tunes</li>
+                </ul>
+            </div>
+        </main>
+        <footer>
+            <p>Created at Codex</p>
+        </footer>
+    </section>
+
+    <script>
+        let distance = 500;
+        let days = 7;
+        let dailyDistance = distance / days;
+        console.log("Daily travel distance: " + dailyDistance.toFixed(2) + " miles");
+    </script>
+</body>
+</html>
